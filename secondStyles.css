@@ -1,0 +1,395 @@
+::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (orientation:portrait) {
+    .portraitWarning {
+        content: "Please Turn Your Device Into Landscape";
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        background-color: white;
+        height: 500vh;
+        width: 100%;
+        z-index: 5;
+        font-size: 18vw;
+        color: black;
+    }
+}
+@media screen and (orientation:landscape) {
+    .portraitWarning {
+        font-size: 0%;
+    }
+}
+html {
+    height:100%;
+    width:100%;
+    margin:0%;
+    padding:0%;
+    overflow-x: hidden;
+}
+.collage {
+    display: flex;
+}
+.Columns {
+    flex: 1;
+    margin-left: 0vh;
+}
+.MainTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30vh;
+    margin-top: 0vh;
+    margin-left: 0;
+    margin-right: 0vh;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0vh;
+    width: 160vh;
+}
+.MainTitle::after {
+    z-index: 4;
+    content: "|";
+    color: white;
+    animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.MainTitletwo { 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30vh;
+    margin-top: 10vh;
+    padding-left: 0vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+    margin-bottom: 0; 
+}
+.WholeAssembly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ImageSection {
+    justify-content: left;
+    margin-left: 11vh;
+    color: white;
+}
+.mainHeader {
+    margin-top: 10vh;
+    font-size: 4vh;
+    font-family: 'Space Mono', monospace;
+}
+.MainInfo {
+    font-size: 4vh;
+    font-family: 'Space Mono', monospace;
+}
+.NavButtons {
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 80vh;
+    font-size: 10vh;
+    margin-bottom: 0;
+    margin-top: 0vh;
+    transition: all 0.2s;
+    background-color: none;
+}
+.NavButtons:hover {
+    padding-bottom: 0;
+    transform: translateX(2vh);
+    cursor: pointer;
+}
+.navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.MainInfotwo {
+    font-size: 4vh;
+    font-family: 'Space Mono', monospace;
+    transition: all 0.2s;
+    display: inline-block;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+.MainInfotwo:hover {
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
+}
+.arrow {
+    height: 10vh;
+    margin: 0;
+    margin-top: 8vh;
+    top: 10vh;
+}
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-snap-type: y  mandatory;
+    overflow-y: auto;
+}
+.firstSection {
+    height: fit-content;
+    width: fit-content;
+    scroll-snap-align: start;
+}
+.aboutPara {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    margin-left: 45vh;
+    width: 80vh;
+}
+.aboutHeader {
+    margin-left: 20vh;
+    font-size: 20vh;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    margin-top: 20vh;
+}
+.contactMeLink {
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+.contactMeLink:hover {
+    color: #F2DD6E;
+    cursor: pointer;
+}
+.hidden {
+    opacity: 0;
+    transform: translateX(-20%);
+    filter: blur(10vh);
+    transition: all 0.8s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(20%);
+    filter: blur(0);
+}
+.delayed {
+    transition-delay: 200ms;
+}
+.arrowBox{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 157%;
+}
+.Pipe {
+    height: 10vh;
+    margin-top: 10vh;
+}
+.galleryHeader {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30vh;
+    margin: 0;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+.Rows {
+    display: flex;
+}
+.ImagesUploaded {
+    margin-left: 0vh;
+    margin: 0;
+    height: 30vh;
+    margin-bottom: 2vh;
+    background-color: white;
+    padding: 5vh;
+}
+.writingLineClass {
+    opacity: 1;
+}
+.hide {
+    opacity: 0;
+}
+.delayedOne {
+    margin-left: -4vh;
+    transition-delay: 100ms;
+    margin-right: 1vh;
+}
+.delayedTwo {
+    transition-delay: 200ms;
+    margin-right: 2vh;
+}
+.delayedThree {
+    transition-delay: 300ms;
+    margin-right: 5vh;
+}
+.delayedFour {
+    transition-delay: 400ms;
+    margin-right: 2vh;
+}
+.delayedFive {
+    transition-delay: 500ms;
+    margin-right: 3vh;
+}
+.delayedSix {
+    transition-delay: 600ms;
+    margin-left: 2vh;
+}
+.projectHeader {
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 10vh;
+    margin: 0;
+    margin-left: -55vh;
+    text-align: center;
+}
+.ProjectBacking {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 10vh;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgTwo {
+    height: 40vh;
+}
+.center {
+    text-align: center;
+}
+.imgThree {
+    height: 40vh;
+}
+.SecondProjectBacking {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80vh;
+    margin-right: 20vh;
+    margin-top: 10vh;
+}
+.projectHeaderTitle {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 30vh;
+    margin: 0;
+    margin-top: 5vh;
+}
+.arrowBoxTwo {
+    margin-left: 100vh;
+}
+.arrowBoxThree {
+    margin-left: 95vh;
+}
+.contactMeHeader {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    margin-right: 10vh;
+    font-size: 30vh;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14vh;
+    width: 80vh;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.formBackGround {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.2s;
+}
+form:hover {
+    box-shadow: 2vh 0vh 2vh rgb(110, 110, 110);
+}
+form h2 {
+    color: black;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 1vh;
+    margin-left: 4vh;
+    margin-top: 0;
+    font-size: 8vh;
+}
+form input {
+    margin: 0;
+    margin-bottom: 1vh;
+    width: 80%;
+    font-size: 3vh;
+    font-family: 'Space Mono', monospace;
+    color: black;
+}
+form textarea {
+    width: 80%;
+    margin-bottom: 1vh;
+}
+form button {
+    width: 30vh;
+    height: 6vh;
+    background-color: none;
+    border-radius: 0;
+    border-style: solid;
+    border-color: black;
+}
+form button::after {
+    opacity: 0;
+    transform: translateX(-100vh);
+    background-color: black;
+    color: black;
+    padding: 10vh;
+}
+form button:hover::after {
+    transform: translateX(0vh);
+    opacity: 1;
+}
+form button:hover {
+    cursor: pointer;
+}
+.AlternateMethods {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 10vh;
+    width: 80vh;
+    height: 60vh;
+}
+.ContainerMain {
+    display: flex;
+    align-items: center;
+}
+.otherWays {
+    font-family: 'Space Mono', monospace;
+    font-size: 8vh;
+    margin: 0;
+    margin-left: 4vh;
+}
+.infoParas {
+    margin-left: 8vh;
+    font-family: 'Space Mono', monospace;
+    font-size: 3vh;
+    border-style: none;
+}
+.infoHoverable:hover {
+    border-style: solid;
+    border-color: black;
+    width: fit-content;
+}
