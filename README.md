@@ -1,1 +1,0 @@
-# JakubSzamuk.github.io
