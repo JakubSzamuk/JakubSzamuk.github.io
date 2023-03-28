@@ -76,6 +76,7 @@ function secondDeletionFunction() {
         }, 90);
     }, 6000);
 }
+//Event listener for scroll intersection
 const observed = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
